@@ -3,7 +3,7 @@ using Unity.Mathematics;
 
 namespace SpaceShooter
 {
-    public struct CollisionEnemyTag : IComponentData
+    public struct CollideEnemyTag : IComponentData
     {
         public float radius;
     }

@@ -62,7 +62,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Radius: 0
-  m_CollisionType: 2
+  m_CollideType: 2
 --- !u!114 &5057008547725234457
 MonoBehaviour:
   m_ObjectHideFlags: 0

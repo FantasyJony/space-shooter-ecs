@@ -3,7 +3,7 @@ using Unity.Entities;
 
 namespace SpaceShooter
 {
-    public class AsteroidAuthoring : CollisionAuthoring
+    public class AsteroidAuthoring : CollideAuthoring
     {
         public override void Convert(Entity entity, EntityManager dstManager, GameObjectConversionSystem conversionSystem)
         {

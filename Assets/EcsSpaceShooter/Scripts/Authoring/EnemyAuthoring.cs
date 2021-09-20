@@ -6,7 +6,7 @@ using System.Collections.Generic;
 
 namespace SpaceShooter
 {
-    public class EnemyAuthoring : CollisionAuthoring
+    public class EnemyAuthoring : CollideAuthoring
     {
         public override void Convert(Entity entity, EntityManager dstManager, GameObjectConversionSystem conversionSystem)
         {

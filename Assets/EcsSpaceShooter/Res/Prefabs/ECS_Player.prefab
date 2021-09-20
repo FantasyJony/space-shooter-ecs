@@ -9707,7 +9707,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Radius: 1
-  m_CollisionType: 1
+  m_CollideType: 1
 --- !u!114 &4355392388077762299
 MonoBehaviour:
   m_ObjectHideFlags: 0

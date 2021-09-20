@@ -6,7 +6,7 @@ using Unity.Entities;
 
 namespace SpaceShooter
 {
-    public class BulletAuthoring : CollisionAuthoring
+    public class BulletAuthoring : CollideAuthoring
     {
         public override void Convert(Entity entity, EntityManager dstManager, GameObjectConversionSystem conversionSystem)
         {

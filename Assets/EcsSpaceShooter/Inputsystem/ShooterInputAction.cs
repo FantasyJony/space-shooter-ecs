@@ -1,4 +1,4 @@
-// GENERATED AUTOMATICALLY FROM 'Assets/EcsSpaceShooter/Res/InputAction.inputactions'
+// GENERATED AUTOMATICALLY FROM 'Assets/EcsSpaceShooter/Inputsystem/InputAction.inputactions'
 
 using System;
 using System.Collections;
