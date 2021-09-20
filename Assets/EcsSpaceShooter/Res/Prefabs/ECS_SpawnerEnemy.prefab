@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1797896700815642850
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1797896700815642851}
+  - component: {fileID: 6892349515182864706}
+  - component: {fileID: 1797896700815642848}
+  m_Layer: 0
+  m_Name: ECS_SpawnerEnemy
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1797896700815642851
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1797896700815642850}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6892349515182864706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1797896700815642850}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea7d7495833204790ba1d3a8755397f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ConversionMode: 0
+--- !u!114 &1797896700815642848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1797896700815642850}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6974de45704f40af94c9477d82e36d3f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Hazards:
+  - {fileID: 100000, guid: d8d79a1648dd8476e91e781e3c978847, type: 3}
+  - {fileID: 100002, guid: ed300a92222ce4184a4c0096d1c5df62, type: 3}
+  - {fileID: 100002, guid: 39758af370b424c0386be36db8c358ec, type: 3}
+  - {fileID: 100002, guid: 0b0883acca3844b3f93f431d24dacc85, type: 3}
+  - {fileID: 100002, guid: f7b9f2e8add7c42cf86596c057c4ac02, type: 3}
+  m_HazardCount: 10
+  m_SpawnWait: 0.75
+  m_StartWait: 1
+  m_WaveWait: 4
+  m_SpawnValues: {x: 6, y: 0, z: 16}
+  m_Forward: {x: 0, y: 0, z: -1}
