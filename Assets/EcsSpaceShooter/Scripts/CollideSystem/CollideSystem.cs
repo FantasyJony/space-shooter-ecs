@@ -17,7 +17,7 @@ namespace SpaceShooter
         protected override void OnUpdate()
         {
             Entities.WithAll<CollidePlayerTag>().ForEach((Entity entity, ref Translation translation, ref LifeOfHp
-                lifeOfHp, ref CollidePlayerTag collisionTag) =>
+                lifeOfHp, ref CollidePlayerTag collideTag) =>
             {
                 if (lifeOfHp.value <= 0)
                 {
@@ -25,22 +25,22 @@ namespace SpaceShooter
                 }
 
                 float3 pos = translation.Value;
-                float radius = collisionTag.radius;
-                bool isCollection = false;
+                float radius = collideTag.radius;
+                bool isCollideEnter = false;
                 
                 Entities.WithAll<CollideEnemyTag>().ForEach((Entity otherEntity, ref Translation otherTranslation,
                     ref LifeOfHp
-                        otherLifeOfHp, ref CollideEnemyTag otherCollisionTag) =>
+                        otherLifeOfHp, ref CollideEnemyTag otherCollideTag) =>
                 {
-                    if (otherLifeOfHp.value > 0 && CollideUtility.IsCollide(pos, otherTranslation.Value,radius + otherCollisionTag.radius))
+                    if (otherLifeOfHp.value > 0 && CollideUtility.IsCollide(pos, otherTranslation.Value,radius + otherCollideTag.radius))
                     {
-                        isCollection = true;
+                        isCollideEnter = true;
                         --otherLifeOfHp.value;
                         return;
                     }
                 });
 
-                if (isCollection)
+                if (isCollideEnter)
                 {
                     --lifeOfHp.value;
                 }
