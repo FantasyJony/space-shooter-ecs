@@ -1,9 +1,9 @@
 # Unity Space Shooter ECS
 - ECS、InputSystem、URP
-- Unity 版本请参考 ProjectSettings/ProjectVersion.txt
-- Packages 请参考 Packages/manifest.json
+- Unity version ProjectSettings/ProjectVersion.txt
+- Packages Packages/manifest.json
 
-# 开始场景
+# start scene
 Assets/EcsSpaceShooter/Res/Scenes/EcsSpaceShooter
 
 # Entity Debugger
